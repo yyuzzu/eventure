@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './LoginSignUp.css';  // Assuming you have a separate CSS file for styling
+import './LoginSignUp.css';
 
 function LoginSignUp({ setIsLoggedIn }) {
   const [username, setUsername] = useState('');
@@ -7,8 +7,7 @@ function LoginSignUp({ setIsLoggedIn }) {
 
   const handleLogin = (e) => {
     e.preventDefault();
-    // For now, assume the login is always successful
-    setIsLoggedIn(true); // This will trigger the transition to the app
+    setIsLoggedIn(true);
   };
 
   return (

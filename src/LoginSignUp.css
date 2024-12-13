@@ -1,53 +1,45 @@
-/* LoginSignUp.css */
-
-/* Center the login/signup container */
 .login-signup-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;  /* Full viewport height */
+  height: 100vh;
   background: url('https://e1.pxfuel.com/desktop-wallpaper/529/365/desktop-wallpaper-62-concert-planetshakers.jpg') no-repeat center center fixed;
-  background-size: cover; /* Make the image cover the entire background */
-  flex-direction: column; /* Stack the logo and form container vertically */
-  padding: 20px; /* Add some padding to ensure the content doesn't touch the edges */
+  background-size: cover;
+  flex-direction: column;
+  padding: 20px; 
 }
 
-/* Logo styling */
 .logo {
   font-size: 75px;
   font-weight: bold;
   color: #fff;
-  margin-bottom: 30px; /* Increase space between the logo and the form */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add shadow for better visibility */
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
-/* Box for the login/signup form */
 .login-form-container {
-  background: linear-gradient(to bottom, rgba(30, 58, 138, 0.9), rgba(59, 130, 246, 0.9)); /* Darker, more visible blue gradient */
-  padding: 40px; /* Increase padding inside the form box */
+  background: linear-gradient(to bottom, rgba(30, 58, 138, 0.9), rgba(59, 130, 246, 0.9));
+  padding: 40px;
   border-radius: 12px;
   width: 100%;
-  max-width: 450px; /* Slightly wider form box */
+  max-width: 450px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
   color: #fff;
 }
 
-/* Header styles */
 .login-signup-header {
   text-align: center;
-  margin-bottom: 30px; /* Increase space between header and form */
+  margin-bottom: 30px;
 }
 
-/* Form styles */
 .login-form {
   display: flex;
   flex-direction: column;
-  gap: 20px; /* Add gap between form elements */
+  gap: 20px;
 }
 
-/* Input group styles */
 .input-group {
-  margin-bottom: 20px; /* Increase space between input fields */
+  margin-bottom: 20px;
 }
 
 .input-group label {
@@ -64,12 +56,10 @@
   outline: none;
   width: 100%;
   background-color: #fff;
-  color: #333; /* Dark text inside the input fields */
+  color: #333;
 }
-
-/* Button styles */
 .login-btn {
-  background-color: #1D4ED8; /* Blue button */
+  background-color: #1D4ED8;
   color: #fff;
   padding: 14px;
   font-size: 18px;
@@ -80,10 +70,9 @@
 }
 
 .login-btn:hover {
-  background-color: #2563EB; /* Darker blue on hover */
+  background-color: #2563EB;
 }
 
-/* Sign-up text */
 .signup-text {
   text-align: center;
   margin-top: 20px;

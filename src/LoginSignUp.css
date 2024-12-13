@@ -1,0 +1,105 @@
+/* LoginSignUp.css */
+
+/* Center the login/signup container */
+.login-signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;  /* Full viewport height */
+  background: url('https://e1.pxfuel.com/desktop-wallpaper/529/365/desktop-wallpaper-62-concert-planetshakers.jpg') no-repeat center center fixed;
+  background-size: cover; /* Make the image cover the entire background */
+  flex-direction: column; /* Stack the logo and form container vertically */
+  padding: 20px; /* Add some padding to ensure the content doesn't touch the edges */
+}
+
+/* Logo styling */
+.logo {
+  font-size: 75px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 30px; /* Increase space between the logo and the form */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add shadow for better visibility */
+}
+
+/* Box for the login/signup form */
+.login-form-container {
+  background: linear-gradient(to bottom, rgba(30, 58, 138, 0.9), rgba(59, 130, 246, 0.9)); /* Darker, more visible blue gradient */
+  padding: 40px; /* Increase padding inside the form box */
+  border-radius: 12px;
+  width: 100%;
+  max-width: 450px; /* Slightly wider form box */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+/* Header styles */
+.login-signup-header {
+  text-align: center;
+  margin-bottom: 30px; /* Increase space between header and form */
+}
+
+/* Form styles */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Add gap between form elements */
+}
+
+/* Input group styles */
+.input-group {
+  margin-bottom: 20px; /* Increase space between input fields */
+}
+
+.input-group label {
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #e0e0e0;
+}
+
+.input-group input {
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  outline: none;
+  width: 100%;
+  background-color: #fff;
+  color: #333; /* Dark text inside the input fields */
+}
+
+/* Button styles */
+.login-btn {
+  background-color: #1D4ED8; /* Blue button */
+  color: #fff;
+  padding: 14px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #2563EB; /* Darker blue on hover */
+}
+
+/* Sign-up text */
+.signup-text {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.signup-text p {
+  font-size: 14px;
+  color: #e0e0e0;
+}
+
+.signup-text span {
+  color: #60A5FA;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.signup-text span:hover {
+  color: #2563EB;
+}

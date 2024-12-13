@@ -12,12 +12,10 @@ function App() {
   const [filteredEvents, setFilteredEvents] = useState([]);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
-  // Toggle authentication status
   const toggleAuth = () => {
     setIsLoggedIn(!isLoggedIn);
   };
-
-  // Fetch event data from Ticketmaster API
+  
   useEffect(() => {
     const fetchEvents = async () => {
       try {
@@ -42,29 +40,26 @@ function App() {
     fetchEvents();
   }, []);
 
-  // Handle search input change
   const handleSearchChange = (event) => {
     const query = event.target.value;
     setSearchQuery(query);
 
-    // Filter events based on the search query
     if (query) {
       const filtered = events.filter((event) =>
         event.name.toLowerCase().includes(query.toLowerCase())
       );
       setFilteredEvents(filtered);
-      setIsDropdownOpen(true); // Show dropdown when there are results
+      setIsDropdownOpen(true); 
     } else {
       setFilteredEvents([]);
-      setIsDropdownOpen(false); // Hide dropdown when input is empty
+      setIsDropdownOpen(false);
     }
   };
 
-  // Handle event selection
   const handleEventSelect = (eventUrl) => {
-    window.open(eventUrl, "_blank"); // Opens the event link in a new tab
-    setIsDropdownOpen(false); // Close the dropdown after selection
-    setSearchQuery(''); // Clear the search input
+    window.open(eventUrl, "_blank");
+    setIsDropdownOpen(false);
+    setSearchQuery('');
   };
 
   return (
